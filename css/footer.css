@@ -1,0 +1,42 @@
+footer {
+    background: #290F46;
+}
+
+footer .container {
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    padding: 81px 145px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copy {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 163.35%;
+    color: #FCFCFC;
+}
+
+.icon-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.icon-flex a {
+    display: block;
+}
+
+a:hover > svg #icon {
+    fill: #8C7F9B;
+}
+
+@media (max-width: 990px) {
+    footer .container {
+        padding: 81px 16px;
+    }
+}

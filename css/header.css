@@ -1,0 +1,162 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1440px;
+    width: 100%;
+    margin: auto;
+}
+
+header {
+    width: 100%;
+    height: 158px;
+    position: fixed;
+    z-index: 1;
+    background: #EFEFEF;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+header .container {
+    position: relative;
+    padding-left: 147px;
+    padding-right: 147px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+header h1 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 178.2%;
+    letter-spacing: 2px;
+    color: #30124E;
+}
+
+nav a {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 207.9%;
+    letter-spacing: 2px;
+    color: #30233D;
+    text-decoration: none;
+    margin-left: 23px;
+    display: inline-block;
+    margin-bottom: 2px;
+}
+
+a div {
+    width: 35px;
+    height: 1px;
+    background: #F61067;
+    margin: 0 auto;
+    opacity: 0;
+}
+
+nav a:hover {
+    color: #675776;
+}
+
+nav a:hover>div {
+    opacity: 1;
+}
+
+.tel {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 207.9%;
+    letter-spacing: 2px;
+    color: #30233D;
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+}
+
+svg {
+    margin-right: 19px;
+    display: block;
+}
+
+.tel:hover {
+    color: #7C6C8B;
+    cursor: pointer;
+}
+
+.tel:hover > svg #tel { 
+    color: #7C6C8B;     
+    cursor: pointer;
+    fill: #7C6C8B;
+}
+
+.burger-menu {
+    position: absolute;
+    width: 228px;
+    height: 254px;
+    background: #F4F4F4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 70px;
+    right: 0; 
+    padding: 16px;   
+}
+
+.close {
+    background: url(../images/Group\ 3.svg) no-repeat;
+    width: 14px;
+    height: 14px;
+    background-size: cover;
+    background-position: center center;
+    align-self: flex-end;
+    margin-bottom: 30px;
+}
+
+.burger {
+    height: 16px;
+    width: 27px;
+    background: url(../images/Burger.svg) no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: none;
+}
+.burg1 {
+    display: none;
+} 
+
+@media (max-width: 990px) {
+    .container {
+        max-width: 990px;
+    }
+
+    header .container {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
+
+@media (max-width: 584px) {
+    .container {
+        max-width: 584px;
+    }
+    nav {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .burger:hover .burg1 {
+        display: block;
+}
+
+}

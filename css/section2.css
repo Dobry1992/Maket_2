@@ -1,0 +1,107 @@
+.info2 {
+    background: #290F46;
+}
+.info2 .container {
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 107px;
+    padding-bottom: 144px;
+}
+
+.info2 h1 {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 208%;
+    letter-spacing: 6px;
+    color: #F61067;
+    margin-bottom: 46px;
+    margin-left: 295px;
+}
+
+.flex-info {
+    display: flex;
+    justify-content: center;
+}
+
+.str1 {
+    background: url(..//images/Arrow\ \(Stroke\).svg) no-repeat;
+    width: 29px;
+    height: 52px;
+    background-position: center center;
+    background-size: cover;
+    align-self: center;
+    margin: 1%;
+}
+
+.str2 {
+    background: url(..//images/Arrow\ \(Stroke\).svg) no-repeat;
+    width: 29px;
+    height: 52px;
+    background-position: center center;
+    background-size: cover;
+    transform: scale(-1, -1);
+    align-self: center;
+}
+
+.child {
+    max-width: 425px;
+    background: white;
+    padding: 43px 47px 55px 47px;
+    margin: 1%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.krug {
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    background: #E2E2E2;
+    margin-bottom: 23px;
+    margin-right: 20px;
+}
+
+.child h2 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #30233D;
+    display: block;
+    align-content: center;
+}
+
+.child p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #776C82;
+}
+
+@media (max-width: 990px) {
+    .info2 h1 {
+        margin-left: 130px;
+    }
+
+    .child {
+        max-width: 362px;
+    }
+}
+
+@media (max-width: 584px) {
+    .flex-info div:nth-child(2) {
+        display: none;
+    }
+
+    .child {
+        max-width: 425px;
+    }
+
+    .info2 h1 {
+        margin-left: 85px;
+    }
+}
